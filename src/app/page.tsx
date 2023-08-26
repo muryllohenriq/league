@@ -4,9 +4,11 @@ export default function Home() {
   return (
     <main className="">
       <h1 className="flex justify-center">Vladimir</h1>
-      <div className="">
-      {matchUps.map((e) => <div className="border w-28">{e}</div>)}
+      <section className="">
+      <div className="grid gap-x-8 gap-y-4 grid-cols-4 border w-11/12 justify-items-center my-0 mx-auto">
+      {matchUps.map((e) => <div className="border w-52 h-52">{e}</div>)}
       </div>
+      </section>
     </main>
   )
 }
